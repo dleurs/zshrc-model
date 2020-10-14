@@ -4,12 +4,13 @@ alias gof="cd /Users/dle/Documents/Flutter"
 
 # FUNCTIONS
 
+push() {
 if [ $# -eq 0 ];
 then
-  echo "No arguments supplied. You should use push \"initial commit\"  [origin by default, else origin-froggit for both]";
+  echo "No arguments supplied. Example : push \"initial commit\"  [remote : origin and froggit by default]";
 else
   commitMessage=$1
-  if [ "$commitMessage" = "" ];
+  if [ "$commitMessage" = "" ]; 
   then
     echo "No commit message";
   else
@@ -17,7 +18,7 @@ else
     git add -A;
     echo "\ngit commit -m \"${commitMessage}\";\n";
     git commit -m $commitMessage;
-    if [ $# -eq 1 ];
+    if [ $# -eq 1 ]; 
     then
       echo "\ngit push origin master;\n";
       git push origin master;
@@ -28,11 +29,13 @@ else
       then
        echo "\ngit push origin master;\n";
        git push origin master;
+
       fi
     fi
   fi
 fi
 }
+
 
 # PATH
 
