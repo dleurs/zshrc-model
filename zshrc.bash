@@ -20,18 +20,16 @@ else
     git commit -m $commitMessage;
     if [ $# -eq 1 ]; 
     then
-      echo "\ngit push origin master;\n";
-      git push origin master;
-      echo "\ngit push froggit master;\n";
-      git push froggit master;
+      branch="master";
     else
-      if [ "$2" = "origin" ];
-      then
-       echo "\ngit push origin master;\n";
-       git push origin master;
-
-      fi
+      branch=$2
     fi
+      echo "\ngit push origin $branch;\n";
+      git push origin $branch;
+      echo "\ngit push froggit $branch;\n";
+      git push froggit $branch;
+      echo "\ngit push numberly $branch;\n";
+      git push numberly $branch;
   fi
 fi
 }
