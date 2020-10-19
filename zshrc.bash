@@ -1,6 +1,6 @@
 # ALIASES
 
-alias gof="cd /Users/dle/Documents/Flutter"
+alias gof="cd /Users/<CHANGEUSER>/Documents/Flutter"
 
 # FUNCTIONS
 
