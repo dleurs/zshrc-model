@@ -7,7 +7,7 @@ alias gof="cd /Users/<CHANGEUSER>/Documents/Flutter"
 push() {
 if [ $# -eq 0 ];
 then
-  echo "No arguments supplied. Example : push \"initial commit\"  [remote : origin and froggit by default]";
+  echo "No arguments supplied. Example : push \"initial commit\"  [remote : github, froggit and numerbly by default]";
 else
   commitMessage=$1
   if [ "$commitMessage" = "" ]; 
@@ -24,8 +24,8 @@ else
     else
       branch=$2
     fi
-      echo "\ngit push origin $branch;\n";
-      git push origin $branch;
+      echo "\ngit push github $branch;\n";
+      git push github $branch;
       echo "\ngit push froggit $branch;\n";
       git push froggit $branch;
       echo "\ngit push numberly $branch;\n";
