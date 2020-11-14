@@ -1,6 +1,7 @@
 # ALIASES
 
 alias gof="cd /Users/<CHANGEUSER>/Documents/Flutter"
+alias rm="FAILURE : better user rmtrash, or /bin/rm"
 
 # FUNCTIONS
 
