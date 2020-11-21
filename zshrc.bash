@@ -42,6 +42,10 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH="$PATH:/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 export PATH="$PATH:/Users/dle/Documents/Flutter/Software/flutter/bin"
 
+# KEYS
+
+GITHUB_ACCESS_TOKEN="" 
+
 # DEFAULT ZSHRC STUFF
 
 ...
