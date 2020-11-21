@@ -2,6 +2,8 @@
 
 alias gof="cd /Users/<CHANGEUSER>/Documents/Flutter"
 alias rm="echo 'FAILURE : better user rmtrash, or /bin/rm'"
+alias k="kubectl"
+alias d="docker"
 
 # FUNCTIONS
 
