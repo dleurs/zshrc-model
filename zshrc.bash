@@ -4,7 +4,7 @@ alias gof="cd /Users/<CHANGEUSER>/Documents/Flutter"
 alias rm="echo 'FAILURE : better user rmtrash, or /bin/rm'"
 alias k="kubectl"
 alias d="docker"
-alias activate-rvm='source /Users/dle/.rvm/scripts/rvm;rvm use 2.7.0;'
+alias activate-rvm='source /Users/<CHANGEUSER>/.rvm/scripts/rvm;rvm use 2.7.0;'
 alias deactivate-rvm='rvm use system'
 
 # FUNCTIONS
