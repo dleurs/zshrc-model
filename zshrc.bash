@@ -29,6 +29,8 @@ else
     else
       branch=$2
     fi
+      echo "\ngit push origin $branch;\n";
+      git push origin $branch;
       echo "\ngit push github $branch;\n";
       git push github $branch;
       echo "\ngit push froggit $branch;\n";
