@@ -12,7 +12,7 @@ alias deactivate-rvm='rvm use system'
 push() {
 if [ $# -eq 0 ];
 then
-  echo "No arguments supplied. Example : push \"initial commit\"  [remote : github, froggit and numerbly by default]";
+  echo "No arguments supplied. Example : push \"initial commit\" ";
 else
   commitMessage=$1
   if [ "$commitMessage" = "" ]; 
@@ -25,7 +25,7 @@ else
     git commit -m $commitMessage;
     if [ $# -eq 1 ]; 
     then
-      branch="master";
+      BRANCH=$(git branch --show-current);
     else
       branch=$2
     fi
