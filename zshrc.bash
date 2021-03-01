@@ -25,7 +25,7 @@ else
     git commit -m $commitMessage;
     if [ $# -eq 1 ]; 
     then
-      BRANCH=$(git branch --show-current);
+      branch=$(git branch --show-current);
     else
       branch=$2
     fi
