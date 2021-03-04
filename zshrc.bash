@@ -30,12 +30,11 @@ else
     else
       branch=$2
     fi
-      REMOTES=$(git remote)
-      for remote in $REMOTES
-      do
-        echo "\ngit push $remote $branch;\n";
-        git push $remote $branch;
-      done
+    for remote in $(git remote)
+    do
+      echo "\ngit push $remote $branch;\n";
+      git push $remote $branch;
+    done
   fi
 fi
 }
