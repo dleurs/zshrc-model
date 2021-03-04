@@ -9,6 +9,7 @@ alias deactivate-rvm='rvm use system'
 
 # FUNCTIONS
 
+
 push() {
 if [ $# -eq 0 ];
 then
@@ -29,14 +30,12 @@ else
     else
       branch=$2
     fi
-      echo "\ngit push origin $branch;\n";
-      git push origin $branch;
-      echo "\ngit push github $branch;\n";
-      git push github $branch;
-      echo "\ngit push froggit $branch;\n";
-      git push froggit $branch;
-      echo "\ngit push numberly $branch;\n";
-      git push numberly $branch;
+      REMOTES=$(git remote)
+      for remote in $REMOTES
+      do
+        echo "\ngit push $remote $branch;\n";
+        git push $remote $branch;
+      done
   fi
 fi
 }
