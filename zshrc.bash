@@ -39,6 +39,35 @@ else
 fi
 }
 
+apush() { # Amend push
+if [ $# -eq 0 ];
+then
+  echo "No arguments supplied. Example : push \"initial commit\" ";
+else
+  commitMessage=$1
+  if [ "$commitMessage" = "" ]; 
+  then
+    echo "No commit message";
+  else
+    echo "\ngit add -A;\n";
+    git add -A;
+    echo "\ngit commit --amend -m \"${commitMessage}\";\n";
+    git commit --amend -m $commitMessage;
+    if [ $# -eq 1 ]; 
+    then
+      branch=$(git branch --show-current);
+    else
+      branch=$2
+    fi
+    for remote in $(git remote)
+    do
+      echo "\ngit push $remote $branch --force;\n";
+      git push $remote $branch --force;
+    done
+  fi
+fi
+}
+
 
 # PATH
 
