@@ -4,9 +4,11 @@ alias gof="cd /Users/dle/Documents/Flutter"
 alias rm="echo 'FAILURE : better user rmtrash, or /bin/rm'"
 alias k="kubectl"
 alias d="docker"
+alias sublzsh="subl ~/.zshrc"
 #alias activate-rvm='source /Users/dle/.rvm/scripts/rvm;rvm use 2.7.0;'
 #alias deactivate-rvm='rvm use system'
 alias flutter='fvm flutter'
+alias dart='fvm dart'
 alias ddevtools='dart pub global run devtools'
 
 # FUNCTIONS
