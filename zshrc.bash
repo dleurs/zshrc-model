@@ -76,9 +76,11 @@ fi
 
 # PATH
 
+# code for Visual Studio Code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# subl for Sublime Text
 export PATH="$PATH:/Applications/Sublime Text.app/Contents/SharedSupport/bin"
-# export PATH="$PATH:/Users/dle/Documents/Flutter/Software/flutter/bin" using fvm instead
+# export PATH="$PATH:/Users/dle/Documents/Flutter/Software/flutter/bin" not needed, using fvm instead
 
 # KEYS
 
