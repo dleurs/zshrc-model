@@ -59,12 +59,7 @@ else
   git add -A;
   echo "\ngit commit --amend -m \"${commitMessage}\";\n";
   git commit --amend -m $commitMessage;
-  if [ $# -eq 1 ]; 
-  then
-    branch=$(git branch --show-current);
-  else
-    branch=$2
-  fi
+  branch=$(git branch --show-current);
   for remote in $(git remote)
   do
     echo "\ngit push $remote $branch --force;\n";
