@@ -1,6 +1,7 @@
 # ALIASES
 
 alias gof="cd /Users/dle/Documents/Flutter"
+alias goh="cd /Users/dle/Documents/haskell"
 alias rm="echo 'FAILURE : better user rmtrash, or /bin/rm'"
 alias k="kubectl"
 alias d="docker"
@@ -10,6 +11,7 @@ alias sublzsh="subl ~/.zshrc"
 alias flutter='fvm flutter'
 alias dart='fvm dart'
 alias ddevtools='dart pub global run devtools'
+alias helloworld='git fetch; git pull; git status;'
 
 # FUNCTIONS
 
